@@ -1,0 +1,384 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+/* HTML, BODY, GENERAL SETUP */
+
+html { 
+	background: #63bad8 url(../images/bg.jpg) 50% 0px repeat-x;  
+	text-align: center; 
+}
+body { 
+	text-align: center;  
+	font: 12px 'Lucida Grande',lucida,helvetica,arial,sans-serif;  
+	color: #333333;  
+	padding: 0px;  
+	margin: 0 auto;  
+	width: 840px; 
+}
+#wrappertop{
+	width: 800px;
+	height: 20px;
+	padding: 0 20px 0 20px;
+	margin-top: 20px;
+}
+#wrapperbottom{
+	width: 800px;
+	height: 20px;
+	padding: 0 20px 0 20px;
+	margin-bottom: 20px;
+}
+#wrapper{
+	width: 800px;
+	padding: 0 20px 0 20px;
+	position: relative;
+}
+#content{
+	width: 800px;
+	background-color: #fff;
+	text-align: left;  
+}
+
+/* HEADER */
+
+#header {
+	width: 780px; 
+	background: #c5e6ea;
+	padding: 7px 0 5px 20px;
+	border-bottom: #b2ccd0 solid 1px;   
+}
+h1{                      
+	margin-top: 15px;
+	display: inline;
+	width: 220px;
+}
+
+/* ACTIVE INVOICES TITLE */
+
+#darkbanner{
+	margin: 20px 0 0 -18px;
+	padding: 8px 10px 10px 40px;
+	background: #424242;
+	position: relative;
+}
+#darkbanner span{
+	padding-left: 35px;
+	color: #fff;
+	display: block;
+}
+#darkbannerwrap{
+	background: url(../images/aiwrap.png);
+	width: 18px;
+	height: 10px;
+	margin: 0 0 20px -18px;
+	position: relative;
+}
+
+
+
+
+/* TITLE WIDTHS */
+
+.banner450{
+	width: 450px;
+}
+.banner285{
+	width: 285px;
+}
+.banner320{
+	width: 320px;
+}
+.banner350{
+	width: 350px;
+}
+.banner380{
+        width: 380px;
+}
+.banner410{
+        width: 410px;
+}
+
+
+
+/* ACCOUNT MANAGEMENT */
+
+h2{
+	font: bold 24px helvetica, arial, sans-serif;
+	color: #fff;
+	display: inline;
+	margin-left: 10px;
+}
+
+fieldset{
+	background-color: #eaf6f7;
+	border-top: 2px solid #acdbe1;
+	border-bottom: 2px solid #acdbe1;
+	margin: 20px;
+	padding: 20px;
+	display: block;
+	*position: relative; 
+	*margin-top:20px; 
+	*padding-top:40px;
+}
+legend{
+	font: bold 16px helvetica, arial, sans-serif;
+	padding: 5px;
+	*position:absolute; 
+	*top: -.5em; 
+	*left: 20px;
+	*padding: 0px;
+	*margin-bottom: 20px;
+}
+label{
+	float: left;
+	text-align: right;
+	width: 150px;
+	font-weight: bold;
+	margin-right: 10px;
+	padding-top: 7px;
+}
+input{
+	height: 20px;
+	width: 300px;
+	margin-bottom: 15px;
+	padding: 3px;
+	font: 16px 'Lucida Grande', arial, sans-serif;
+}
+.input_file{
+        height: 25px; 
+        margin-bottom: 15px;
+        padding: 3px;
+        font: 16px 'Lucida Grande', arial, sans-serif;
+}
+
+select{
+	height: 30px;
+	width: 310px;
+	margin-bottom: 15px;
+	padding: 3px;
+	font: 16px 'Lucida Grande', arial, sans-serif;
+}
+textarea{
+	height: 140px;
+	width: 400px;
+	margin-bottom: 15px;
+	padding: 3px;
+	font: 16px 'Lucida Grande', arial, sans-serif;
+}
+
+.wysiwyg table{
+	margin-bottom: 15px;
+}
+
+.wysiwyg td{ 
+	border-bottom: 0px solid #fff;
+	padding: 0px 0px 0px 0px;
+	margin-bottom: 15px; 
+}
+
+
+/* BUTTONS */
+
+.form button{
+    display:block;
+    float:left;
+    margin:0 7px 0 160px;
+    background-color:#92c97c;
+    border:1px solid #73b35a;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#e8f7df;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+    _margin-left: 82px;
+}
+.form button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+.form button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.form button img, .buttons a img{
+    margin:0 6px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+    text-decoration: none;
+}
+button:hover{
+    background-color:#e8f7df;
+    border:1px solid #92c97c;
+    color:#31940c;
+}
+.buttons a:active{
+    background-color:#e8f7df;
+    border:1px solid #92c97c;
+    color:#31940c;
+}
+
+
+/* FOOTER */
+
+#footer{
+	width: 760px;
+	padding: 20px;
+	background-color: #104b67;
+	color: #9fb7c2;
+	font-weight: bold;
+	margin-top: 20px;
+}
+#footer a{
+	color: #9fb7c2;
+	font-weight: normal;
+}
+
+
+/* LOGIN */
+
+body#login {  
+	width: 410px; 
+}
+body#login #wrappertop{
+	width: 370px;
+}
+body#login #wrapperbottom{
+	width: 370px;
+}   
+body#login #wrapperbottom_branding{
+        width: 370px;
+        padding: 0 20px 0 20px;  
+}
+body#login #wrapperbottom_branding_text{
+        width: 370px;
+        background-color: #fff;
+        padding-top: 3px;  
+        padding-bottom: 10px;
+        color: #C0C0C0; 
+        font: 11px 'Lucida Grande', arial, sans-serif;
+}
+body#login #wrapperbottom_branding_text a{
+        color: #C0C0C0; 
+}
+body#login #wrapper{
+	width: 370px;
+	padding: 0 20px 0 20px;
+}
+body#login #content{
+	width: 370px;
+}
+body#login #header {
+	width: 350px;
+}
+body#login fieldset{
+	width: 330px;
+	border: 0;
+	margin: 0px;
+	display: block;
+	margin-top: -30px;
+	background-color: #fff;
+	padding-top: 20px;
+}
+body#login fieldset p{
+	color: #333333;
+}
+body#login fieldset p.error{
+	padding: 10px 10px 10px 10px;
+	color: #7b0c00;
+	display: block;
+	border: 2px solid #bc6f6b;
+	background: #eac5c5;
+	margin-bottom: 20px;
+	font-weight: bold;
+	}
+body#login fieldset p.error img{
+	margin-right: 5px;
+	}	
+body#login label{
+	float: left;
+	text-align: right;
+	width: 70px;
+	font-weight: bold;
+	margin-right: 10px;
+	padding-top: 7px;
+}
+body#login input{
+	height: 30px;
+	width: 238px;
+	_width: 237px;
+	margin-bottom: 15px;
+	padding: 3px;
+	font: 16px 'Lucida Grande', arial, sans-serif;
+}
+body#login .form button{
+    display:block;
+    float:left;
+    margin:0 3px 0 80px;
+    _margin-left: 42px;
+}
+#forgottenpassword{ 
+	margin-top: 7px;
+}
+#forgottenpassword a{
+	color: #333333;
+	}
+#forgottenpassword a:hover{
+	color: #104b67; 
+}
+#forgottenpassword li{ 
+	display: inline; 
+	margin-left: 10px; 
+}

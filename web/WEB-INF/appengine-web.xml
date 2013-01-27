@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+    <application>geminionlinegs</application>
+    <version>1</version>
+    <static-files>
+        <include path="/favicon.ico"/>
+        <include path="/stylesheets/beautiful.css"/>
+        <include path="/images/aiwrap.png"/>
+        <include path="/images/bg.jpg"/>
+        <include path="/images/key.png"/>
+        <include path="/images/logo.png"/>
+        <include path="/images/error.png"/>
+    </static-files>
+    <resource-files/>
+    <system-properties>
+        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    </system-properties>
+</appengine-web-app>

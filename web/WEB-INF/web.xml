@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>sign</servlet-name>
+        <servlet-class>gemini.AddNewPost</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sign</servlet-name>
+        <url-pattern>/sign</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>sendmail</servlet-name>
+        <servlet-class>gemini.EmailMethod</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendmail</servlet-name>
+        <url-pattern>/sendmail</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>mainred</servlet-name>
+        <servlet-class>gemini.MainRedirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainred</servlet-name>
+        <url-pattern>/mainred</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>createaccount</servlet-name>
+        <servlet-class>gemini.CreateAccount</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createaccount</servlet-name>
+        <url-pattern>/createaccount</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>gemini.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <!--<welcome-file>index.jsp</welcome-file>-->
+        <welcome-file>signup.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
