@@ -28,6 +28,7 @@ I am also not responsible if your computer explodes, or anything like that :)
 - [Media](https://github.com/willyg302/Gemini-OGS/tree/master/Media): contains all media related to this project (logos, documentation, etc.)
 - [src](https://github.com/willyg302/Gemini-OGS/tree/master/src): contains the Java source for Gemini's backend
 - [web](https://github.com/willyg302/Gemini-OGS/tree/master/web): contains all web pages, stylesheets, and assets for the Gemini frontend
+- [GeminiTester](https://github.com/willyg302/Gemini-OGS/tree/master/GeminiTester): contains entire NetBeans project directory for my simple Gemini Tester
 
 ## More Info
 
