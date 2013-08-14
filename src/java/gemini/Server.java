@@ -1,8 +1,6 @@
 package gemini;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.PersistenceCapable;
@@ -134,5 +132,4 @@ public class Server {
         this.rank = rank;
         this.bing = bing;
     }
-    
 }

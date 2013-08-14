@@ -79,7 +79,7 @@ if(pvCode) document.form1.code.value = pvCode;
 document.form1.submit();
         </script>
 <%
-  }
+    }
 %>
     </body>
 </html>

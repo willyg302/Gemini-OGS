@@ -73,11 +73,6 @@
                     }
                 }
             }
-            
-            
-            
-            
-            
             if(servers.isEmpty()) {
                 out.println("No servers found.");
             } else {

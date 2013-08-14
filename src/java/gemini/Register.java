@@ -2,35 +2,31 @@ package gemini;
 
 import java.io.IOException;
 
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Date;
 import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
 import javax.servlet.http.*;
 
-public class Register extends HttpServlet{
-    
-    public void doPost(HttpServletRequest req, HttpServletResponse resp)
-                throws IOException {
-        
+public class Register extends HttpServlet {
+
+    @Override
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+
         PersistenceManager pm = PMF.get().getPersistenceManager();
-        Query query = pm.newQuery("select from " + Account.class.getName() + 
-                " where password == param");
+        Query query = pm.newQuery("select from " + Account.class.getName() + " where password == param");
         query.declareParameters("String param");
         query.setUnique(true);
 
         Account g = (Account) query.execute(req.getParameter("password"));
-        if(g != null) {
-            if(g.getCode().equals(req.getParameter("code"))) {
-                query = pm.newQuery("select from " + Server.class.getName() + 
-                        " where addr == param");
+        if (g != null) {
+            if (g.getCode().equals(req.getParameter("code"))) {
+                query = pm.newQuery("select from " + Server.class.getName() + " where addr == param");
                 query.declareParameters("String param");
                 query.setUnique(true);
                 Server serv = (Server) query.execute(req.getRemoteAddr());
                 Date date = new Date();
-                if(serv != null) {
-                    if(req.getParameter("pass").equals("delete")) {
+                if (serv != null) {
+                    if (req.getParameter("pass").equals("delete")) {
                         pm.deletePersistent(serv);
                     } else {
                         serv.update(date,
@@ -46,7 +42,7 @@ public class Register extends HttpServlet{
                     }
                 } else {
                     //Date date = new Date();
-                    Server server = new Server(req.getParameter("password"),date,
+                    Server server = new Server(req.getParameter("password"), date,
                             req.getRemoteAddr(),
                             Integer.parseInt(req.getParameter("port")),
                             req.getParameter("name"),
@@ -56,7 +52,7 @@ public class Register extends HttpServlet{
                             Integer.parseInt(req.getParameter("curr")),
                             Integer.parseInt(req.getParameter("maxp")),
                             Integer.parseInt(req.getParameter("rank")),
-                            Boolean.parseBoolean(req.getParameter("bing")));   
+                            Boolean.parseBoolean(req.getParameter("bing")));
                     try {
                         pm.makePersistent(server);
                     } finally {

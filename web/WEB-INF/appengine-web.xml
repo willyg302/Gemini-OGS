@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://kenai.com/projects/nbappengine/downloads/download/schema/appengine-web.xsd appengine-web.xsd">
     <application>geminionlinegs</application>
     <version>1</version>
     <static-files>
         <include path="/favicon.ico"/>
         <include path="/stylesheets/beautiful.css"/>
+        <include path="/js/includes.js"/>
         <include path="/images/aiwrap.png"/>
         <include path="/images/bg.jpg"/>
         <include path="/images/key.png"/>
         <include path="/images/logo.png"/>
         <include path="/images/error.png"/>
     </static-files>
+    <threadsafe>false</threadsafe>
     <resource-files/>
     <system-properties>
         <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
